@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Payments</title>
+    <link rel="stylesheet" href="payment.css">
+    <script src="https://kit.fontawesome.com/2d9b67a497.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="list1">
+           <li><a href="cart.html"> <i class="fas fa-arrow-circle-left" style="cursor: pointer;"> </a></i></li>
+            <li style="margin-left:30px ;">Payment Options</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="main">
+            <div class="el">
+                <input type="radio" name="r1" checked> Error Loans <img src="images for project/Error Logo.png"
+                    id="img">
+            </div>
+
+            <div class="dw">
+                <input type="radio" name="r1"> Digital Wallet <img src="images for project/phonepe.png"
+                    id="img">&nbsp<img src="images for project/paytm.jpg" id="img">&nbsp<img
+                    src="images for project/gpay.png" id="img">
+            </div>
+            <div id="dw-display">
+                <a href="https://paytm.com/paytmwallet"
+                    style="text-decoration: none;margin-left: 30px; font-family: Comic Sans MS;font-size:18px;">Link a
+                    Wallet</a>
+            </div>
+            <div class="ccdc">
+                <input type="radio" name="r1"> Credit Card / Debit Card <img src="images for project/mastercard.png"
+                    id="img">&nbsp<img src="images for project/visa.png" id="img">
+            </div>
+
+            <div class="ccdc-dispaly"
+                style="text-decoration: none;margin-left: 30px; font-family: Comic Sans MS;font-size:18px;">
+                <form>
+                    <table>
+                        <tr>
+                            <td>Card Holder</td>
+                            <td><input type="text" placeholder="Enter your name"></td>
+                            <td>&nbsp&nbsp&nbsp&nbsp</td>
+                            <td>Card Number</td>
+                            <td><input type="number" placeholder="1111-2222-3333-4444" min="1000000000000000"
+                                    max="9999999999999999"></td>
+                        </tr>
+                        <tr>
+                            <td>CVV</td>
+                            <td><input type="number" placeholder="123" min="100" max="999"></td>
+                            <td>&nbsp&nbsp&nbsp&nbsp</td>
+                            <td>Expiry Date</td>
+                            <td><input type="month" placeholder="MM/YYYY"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+
+            <div class="nb">
+                <input type="radio" name="r1"> Net Banking
+            </div>
+
+            <div class="emi">
+                <input type="radio" name="r1"> EMI<span style="font-size:15px;">(Easy Installment)</span>
+            </div>
+
+            <div class="cod">
+                <input type="radio" name="r1"> Cash On Delivery
+            </div>
+        </div>
+        <div class="coupon">
+            <span>Have an Error Coupon ? Redeem it..!!</span> <input type="text" name="coupon"
+                placeholder="ERR2022AA****">
+        </div>
+        <form>
+            <div class="checkbox">
+                <input type="checkbox" name="Check" onclick="che()" required checked> I Agree to the <a
+                    href="https://www.termsfeed.com/public/uploads/2021/12/sample-terms-conditions-agreement.pdf"
+                    target="_blank">Terms and
+                    Conditions*</a>
+        </form>
+    </div>
+    <div class="continue">
+        <a href="continue.html" class="btn">Continue</a>
+    </div>
+    <div class="credit">Made with <span style="color:tomato">❤</span> by <a href="welcome.html">ERROR 404</a></div>
+    </div>
+    
+    <!-- scripting -->
+    <script>
+        function che() {
+            if (!document.getElementsByClassName("checkbox").unchecked) {
+                alert("You have to agree with our Terms and Conditions in order to proceed.");
+            }
+            else {
+                alert("You agree to our Terms And Conditions. Thanks!");
+            }
+        }
+    </script>
+</body>
+
+</html>

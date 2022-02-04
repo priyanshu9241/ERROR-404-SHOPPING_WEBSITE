@@ -1,0 +1,153 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-image: url(images/shp.jpg);
+}
+
+.btn {
+  display: inline-block;
+  background: #ff523b;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+  transition: background 0.5s;
+}
+
+.btn:hover {
+  background: #563434;
+}
+
+.content {
+  margin: 7vh 20vw 7vh 20vw;
+  border: 4px solid white;
+  border-radius: 12px;
+  height: 85vh;
+  background: radial-gradient(#fff, #ffdcdc);
+}
+
+.h1 {
+  padding: 30px;
+  text-align: center;
+  font-size: 45px;
+  margin-top: 30px;
+  margin-bottom: -30px;
+}
+.h1 {
+  animation: fadeInAnimation ease-in-out 0.8s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.feedback {
+  padding: 10px;
+  line-height: 40px;
+  border: 5px solid white;
+  border-radius: 12px;
+  margin: 7vh 7vw 7vh 3vw;
+}
+.writing {
+  font-size: 26px;
+  font-weight: 800;
+}
+#writing {
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 2px solid Black;
+}
+
+.submit {
+  margin: -5px 30px 0px 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+.submit input {
+  height: 35px;
+  width: 100px;
+  background-color: rgb(255, 197, 71);
+  font-size: 18px;
+}
+
+.continue {
+  margin: 15px 30px 0px 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+.continue input {
+  height: 40px;
+  width: 150px;
+  background-color: tomato;
+  font-size: 24px;
+}
+.credit {
+  text-align: center;
+  color: #000;
+  background-color: white;
+  font-size: 40px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.credit a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+/* Form Star Rating */
+.rate {
+  float: left;
+  height: 46px;
+  padding: 0 10px;
+}
+.rate:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+}
+.rate:not(:checked) > label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 30px;
+  color: #ccc;
+}
+.rate:not(:checked) > label:before {
+  content: "★ ";
+}
+.rate > input:checked ~ label {
+  color: #ffc700;
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: #deb217;
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
+
+@media only screen and (max-width: 950px) {
+  .content {
+    margin: 7vh 2vw 7vh 2vw;
+  }
+}

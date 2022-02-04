@@ -1,0 +1,137 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    background-image: url(images/pmt.jpg);
+  }
+
+.navbar{
+    background: radial-gradient(rgb(196, 181, 181),#ffffff);
+    height:75px;
+    font-size:30px;
+}
+
+.navbar .list1 a{
+    color: black;
+    transition: background 0.5s;
+}
+
+.navbar .list1 a:hover{
+    background: gray;
+}
+
+.list1{
+    list-style:none;
+    font-family: 'Fira Sans', sans-serif;
+    padding:21px;
+    font-weight: bolder;
+    display:flex;
+    flex-direction:row;
+}
+
+.container{
+    margin:7vh 20vw 7vh 20vw;
+    border:2px solid black;
+    border-radius:12px;
+    height:92vh;
+    background-color: white;
+}
+
+.main{
+    padding:30px;
+    line-height:40px;
+    font-size:22px;    
+}
+
+.main div input{
+    cursor: pointer;
+}
+
+.main div:hover{
+    color:rgb(245, 97, 116);
+    font-size:26px;
+}
+
+.coupon{
+    padding:30px;
+    padding-top: 0px;
+    font-size: 22px;
+}
+.coupon input{
+    font-size:18px;
+}
+
+.checkbox{
+    padding:30px;
+    padding-top:0px;
+    font-size:22px;
+}
+.checkbox a{
+    text-decoration:none;
+}
+.continue{
+    margin:-15px 30px 0px 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+.continue input{
+    height: 40px;
+    width:150px;
+    background-color: tomato;
+    font-size: 24px;
+}
+
+.btn{
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+
+.btn:hover{
+    background: #563434;
+}
+
+.credit{
+    animation:fadeinanimation ease-in-out 0.5s alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    text-align: center;
+    color: #000;
+    background-color: white;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .credit a{
+    text-decoration: none;
+    color:#000;
+    font-weight: bold;
+  } 
+
+/* images */
+#img{
+    height:30px;
+    border-radius: 50%;
+}
+@media only screen and (max-width: 950px) {
+    .container {
+      margin:7vh 2vw 7vh 2vw;
+    }
+  }
+
+/*---------------Animation-----------------------*/
+@keyframes fadeinanimation {
+    0% {
+        opacity: 0;
+        }
+    100%{
+        opacity:1;
+    }
+}
